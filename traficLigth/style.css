@@ -1,0 +1,17 @@
+.red , .green, .yellow{
+	border: 2px solid black;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+
+#main{
+	/* background: orange; */
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin: -50px 0 0 -50px;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>trafic Ligth</title>
+</head>
+
+<body>
+	<div id="main">
+
+	</div>
+
+	<script>
+		const main = document.getElementById('main');
+		const red = document.getElementById('red');
+		const yellow = document.getElementById('yellow')
+
+
+
+
+
+		main.append(document.createElement('div'))
+
+		main.append(document.createElement('div'))
+
+		main.append(document.createElement('div'))
+
+		let divs = document.querySelectorAll('#main > div')[0]
+		let divs1 = document.querySelectorAll('#main > div')[1]
+		let divs2 = document.querySelectorAll('#main > div')[2]
+		divs.classList.add('red')
+		divs1.classList.add('yellow')
+		divs2.classList.add('green')
+
+
+		// setInterval(() => {
+		// 	let colorRed = document.querySelector('#main > .red')
+		// 	colorRed.style.backgroundColor = 'red'
+		// }, 5000);
+
+
+		// setInterval(() => {
+		// 	let colorRed = document.querySelector('#main > .red')
+		// 	colorRed.style.backgroundColor = 'white'
+
+		// 	let colorYellow = document.querySelector('#main > .yellow')
+		// 	colorYellow.style.backgroundColor = 'yellow'
+
+		// }, 6000);
+
+		// setInterval(() => {
+		// 	let colorYellow = document.querySelector('#main > .yellow')
+		// 	colorYellow.style.backgroundColor = 'white'
+
+		// 	let colorGreen = document.querySelector('#main > .green')
+		// 	colorGreen.style.backgroundColor = 'green'
+
+		// }, 7000);
+
+		// setInterval(() => {
+		// 	let colorGreen = document.querySelector('#main > .green')
+		// 	colorGreen.style.backgroundColor = 'white'
+
+		// 	let colorYellow = document.querySelector('#main > .yellow')
+		// 	colorYellow.style.backgroundColor = 'yellow'
+
+		// }, 8000);
+
+		// setInterval(() => {
+		// 	let colorYellow = document.querySelector('#main > .yellow')
+		// 	colorYellow.style.backgroundColor = 'white'
+
+		// 	let colorRed = document.querySelector('#main > .red')
+		// 	colorRed.style.backgroundColor = 'red'
+		// }, 9000);
+
+
+		setInterval(() => {
+			setTimeout(() => {
+				let colorRed = document.querySelector('#main > .red')
+				colorRed.style.backgroundColor = 'red'
+			}, 5000);
+
+
+			setTimeout(() => {
+				let colorRed = document.querySelector('#main > .red')
+				colorRed.style.backgroundColor = 'white'
+
+				let colorYellow = document.querySelector('#main > .yellow')
+				colorYellow.style.backgroundColor = 'yellow'
+
+			}, 6000);
+
+			setTimeout(() => {
+				let colorYellow = document.querySelector('#main > .yellow')
+				colorYellow.style.backgroundColor = 'white'
+
+				let colorGreen = document.querySelector('#main > .green')
+				colorGreen.style.backgroundColor = 'green'
+
+			}, 7000);
+
+			setTimeout(() => {
+				let colorGreen = document.querySelector('#main > .green')
+				colorGreen.style.backgroundColor = 'white'
+
+				let colorYellow = document.querySelector('#main > .yellow')
+				colorYellow.style.backgroundColor = 'yellow'
+
+			}, 8000);
+
+			setTimeout(() => {
+				let colorYellow = document.querySelector('#main > .yellow')
+				colorYellow.style.backgroundColor = 'white'
+
+				let colorRed = document.querySelector('#main > .red')
+				colorRed.style.backgroundColor = 'red'
+			}, 9000);
+		}, 5000);
+
+
+
+
+
+	</script>
+</body>
+
+</html>

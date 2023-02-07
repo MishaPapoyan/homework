@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>chees</title>
+</head>
+
+<body>
+	<div id="chess">
+
+	</div>
+
+
+
+	<script>
+
+
+
+
+		let chess = document.querySelector('#chess')
+		chess.append(document.createElement('table'))
+		document.querySelector('#chess > table').classList.add('generalteble')
+		let table = document.querySelector('table')
+
+		for (let j = 0; j < 8; j++) {
+			const tr = document.createElement('tr');
+			tr.classList.add('row')
+			table.append(tr);
+
+		}
+		let tr = document.querySelectorAll('#chess > .generalteble > tr')
+
+
+		for (let j = 0; j < 8; j++) {
+			tr.forEach((item) => {
+				item.append(document.createElement('td'))
+			})
+		}
+
+		let evenTr = document.querySelectorAll('#chess > .generalteble > tr:nth-child(even) > td:nth-child(even) ')
+		console.log(evenTr)
+		let oddTr = document.querySelectorAll('#chess > .generalteble >  tr:nth-child(odd) > td:nth-child(odd) ')
+		console.log(oddTr)
+
+
+
+		// console.log(lastTD)
+		let td = document.querySelectorAll('tr > td')
+		td.forEach((item) => {
+			item.classList.add('column')
+		})
+
+		evenTr.forEach((item) => {
+			item.style.backgroundColor = 'white '
+			let blue = document.querySelectorAll('#chess > .generalteble > tr:nth-child(even) >  td:nth-child(odd)')
+			blue.forEach((i) => {
+				i.style.backgroundColor = 'black'
+			})
+		})
+
+
+		oddTr.forEach((item) => {
+			item.style.backgroundColor = 'white'
+			let green = document.querySelectorAll('#chess > .generalteble > tr:nth-child(odd ) >  td:nth-child(even)')
+			green.forEach((i) => {
+				i.style.backgroundColor = 'black'
+			})
+		})
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>
