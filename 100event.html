@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>100 event</title>
+</head>
+
+<body>
+	<div>
+		<button class="click1">click1</button>
+
+		<button class="click2">click2</button>
+
+		<button class="click3">click3</button>
+
+		<button class="click4">click4</button>
+
+		<button class="click5">click5</button>
+
+		<button class="click6">click6</button>
+
+		<button class="click7">click7</button>
+
+		<button class="click8">click8</button>
+
+		<button class="click9">click9</button>
+
+		<button class="click10">click10</button>
+	</div>
+
+	<p class="text">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil ullam, sunt optio dignissimos similique atque
+		excepturi? Modi nemo atque molestias vel, cumque, doloremque minima voluptates esse, minus eos cum!
+	</p>
+
+	<h1>Misha</h1>
+	<ul>
+		<li>10</li>
+		<li>30</li>
+		<li>40</li>
+	</ul>
+
+
+	<table width = "1000px" border="2" height = "800px">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+
+	</table>
+
+
+	<script>
+		let a = 150
+		let b = 115
+		let c = a * b
+		let btn1 = document.getElementsByClassName('click1')
+		let btn2 = document.getElementsByClassName('click2')
+		let btn3 = document.getElementsByClassName('click3')
+		let btn4 = document.getElementsByClassName('click4')
+		let btn5 = document.getElementsByClassName('click5')
+		let btn6 = document.getElementsByClassName('click6')
+		let btn7 = document.getElementsByClassName('click7')
+		let btn8 = document.getElementsByClassName('click8')
+		let btn9 = document.getElementsByClassName('click9')
+		let btn10 = document.getElementsByClassName('click10')
+		let p = document.querySelector('.text')
+		let h = document.getElementsByTagName('h1')
+		let num = document.querySelector('body > ul > li')
+
+
+
+		// console.log(btn1)
+		btn1[0].addEventListener('click', () => {
+			alert(c)
+		})
+
+		btn2[0].addEventListener('click', () => {
+			alert(a - b)
+		})
+
+
+		btn3[0].addEventListener('click', () => {
+			alert(a / b)
+		})
+
+		btn4[0].addEventListener('click', () => {
+			alert(a + b)
+		})
+
+
+		btn5[0].addEventListener('click', () => {
+			alert(a + b)
+		})
+
+		btn6[0].addEventListener('click', () => {
+			hi('Misha', 'Papoan')
+		})
+		function hi(name, surname) {
+			alert(name + " " + surname)
+		}
+
+		btn7[0].addEventListener('click', () => {
+			x('Misha', 'Papoan', '21')
+		})
+
+		function x(name, surname, age) {
+			alert(name + " " + surname + " " + age)
+		}
+
+		btn8[0].addEventListener('click', () => {
+			console.log(new Note('hp', 288.000, 'AMD readon graphics', 'AMD Ryzen3 5300U'))
+		})
+
+		class Note {
+			constructor(_name, _price, _gpu, _cpu) {
+				this.name = _name,
+					this.price = _price,
+					this.gpu = _gpu,
+					this.cpu = _cpu
+			}
+		}
+
+
+		btn9[0].addEventListener('click', () => {
+			for (let i = 0; i <= 50; i++) {
+				document.write(i + ',')
+			}
+		})
+
+		btn10[0].addEventListener('click', () => {
+			let prl = prompt('choose your destiny', 'ex. JS , PYTON')
+
+			if (prl === 'JS') {
+				document.write(prl)
+			} else if (prl === 'PYTON') {
+				document.write(prl)
+			} else {
+				alert('choose only beetween JS or PYTON')
+			}
+		})
+		p.addEventListener('click', () => {
+			p.innerHTML = 'Hi'
+		})
+
+
+		h[0].addEventListener('click', () => {
+			alert(`hi`)
+		})
+
+		num.addEventListener('click', () => {
+			num.foreEach((item) => {
+				document.write(item + 10)
+			})
+		})
+	</script>
+</body>
+
+</html>

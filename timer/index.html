@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>timer </title>
+</head>
+
+<body>
+
+	<div id="time">
+		<div class="hour"></div>
+		<div class="minut"></div>
+		<div class="second"></div>
+		<div class="timer"></div>
+	</div>
+	<button id="start">start</button>
+	<button id="pause">pause</button>
+	<button id="clear">clear</button>
+
+
+
+	<script>
+		let time = document.getElementById('#time')
+		let hour = document.querySelector('.hour')
+		let minut = document.querySelector('.minut')
+		let second = document.querySelector('.second')
+		let buttonStart = document.getElementById('#start')
+		let buttonPouse = document.getElementById('#pouse')
+		let buttonClear = document.getElementById('#clear')
+		let timer = document.querySelector('.timer')
+
+		let sec = 0
+		let min = 0
+		let hours = 0
+
+		function timerF() {
+			timer.innerHTML = sec += 1
+			if (sec === 60) {
+				sec = 0
+				min +=1
+			}	
+
+			if (min === 60) {
+				min = 0
+				hours +=1
+			}
+			timer.innerHTML = `${hours < 10 ? '0' + hours  : hours }  : ${min < 10 ? '0' + min  : min } : ${sec < 10 ? '0' + sec  : sec }`
+		}
+
+
+
+		timerF()
+
+		setInterval(timerF, .1);
+
+	</script>
+</body>
+
+</html>
